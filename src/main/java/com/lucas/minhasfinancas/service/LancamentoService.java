@@ -1,6 +1,8 @@
 package com.lucas.minhasfinancas.service;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 import com.lucas.minhasfinancas.model.entity.Lancamento;
 import com.lucas.minhasfinancas.model.enums.StatusLancamento;
@@ -18,5 +20,9 @@ public interface LancamentoService {
 	void atulizarStatus(Lancamento lancamento, StatusLancamento status);
 	
 	void validar(Lancamento lancamento);
+	
+	Optional<Lancamento> obterPorId(Long id);
+	
+	BigDecimal obterSaldoPorUsuario(Long id);
 
 }

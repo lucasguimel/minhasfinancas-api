@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.lucas.minhasfinancas.exeption.ErroAutenticacao;
 import com.lucas.minhasfinancas.exeption.RegraNegocioException;
+import com.lucas.minhasfinancas.model.entity.Lancamento;
 import com.lucas.minhasfinancas.model.entity.Usuario;
 import com.lucas.minhasfinancas.model.repository.UsuarioRepository;
 import com.lucas.minhasfinancas.service.UsuarioService;
@@ -54,4 +55,15 @@ public class UsuarioServiceImpl implements UsuarioService{
 		}
 	}
 
+	@Override
+	public Optional<Usuario> obterPorId(Long id) {
+		return repository.findById(id);
+	}
+
+	@Override
+	public void validar(Lancamento lancamento) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }

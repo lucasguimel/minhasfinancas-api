@@ -16,4 +16,5 @@ public interface UsuarioService {
 	void validar(Lancamento lancamento);
 	
 	Optional <Usuario> obterPorId(Long id);
+
 }

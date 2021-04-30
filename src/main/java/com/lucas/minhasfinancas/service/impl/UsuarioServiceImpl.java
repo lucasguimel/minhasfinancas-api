@@ -1,5 +1,6 @@
 package com.lucas.minhasfinancas.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import com.lucas.minhasfinancas.exeption.ErroAutenticacao;
 import com.lucas.minhasfinancas.exeption.RegraNegocioException;
 import com.lucas.minhasfinancas.model.entity.Lancamento;
 import com.lucas.minhasfinancas.model.entity.Usuario;
+import com.lucas.minhasfinancas.model.enums.StatusLancamento;
 import com.lucas.minhasfinancas.model.repository.UsuarioRepository;
 import com.lucas.minhasfinancas.service.UsuarioService;
 
@@ -62,6 +64,37 @@ public class UsuarioServiceImpl implements UsuarioService{
 
 	@Override
 	public void validar(Lancamento lancamento) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Lancamento salvar1(Lancamento lancamentoASalvar) {
+		return lancamentoASalvar;
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Lancamento salvar(Lancamento lancamentoASalvar) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void atualizar(Lancamento lancamentoSalvo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deletar(Lancamento lancamento) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List<Lancamento> buscar(Lancamento lancamento) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void atualizarStatus(Lancamento lancamento, StatusLancamento novoStatus) {
 		// TODO Auto-generated method stub
 		
 	}
